@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinku Prasad Choudhary | Web Developer</title>
+  <meta name="description" content="Portfolio of Tinku Prasad Choudhary, Web Developer — HTML, CSS, JavaScript, React, Tailwind, Node.js, MySQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Tinkuportstyle.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo"><span class="logo-bracket">&lt;</span>🕸️Tinku Prasad<span class="logo-bracket">/&gt;</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="terminal" role="img" aria-label="Terminal window introducing Tinku Prasad Choudhary, Web Developer">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="terminal-title">tinku@portfolio: ~</span>
+          </div>
+          <div class="terminal-body" id="terminalBody">
+            <p><span class="prompt">$</span> whoami</p>
+            <p class="type-line" id="typeLine1">&nbsp;</p>
+            <p class="hidden-line"><span class="prompt">$</span> cat role.txt</p>
+            <p class="type-line" id="typeLine2">&nbsp;</p>
+            <p class="hidden-line"><span class="prompt">$</span> <span class="cursor">▌</span></p>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT / CONTACT ===== -->
+    <section id="about" class="section about">
+      <div class="section-inner about-grid">
+        <div>
+          <h2 class="section-title"><span class="tag">🕸️</span> About</h2>
+             <p class="career-obj">
+                Hello! I'm <strong>Tinku Prasad Choudhary</strong>, 
+                a passionate Software Engineer and Web Developer with expertise in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MySQL.
+                 I enjoy building responsive, user-friendly, and modern web applications while continuously learning new technologies.
+                 My goal is to contribute to innovative projects and grow as a Full Stack Developer.
+                </p>
+        </div>
+        <div class="contact-card" id="contact">
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:tinkuprasad001212@gmail.com">tinkuprasad001212@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">Mobile</span>
+              <a href="tel:+919977263283">+91 99772XX382</a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://in.linkedin.com/in/tinku-prasad-89027a295" target="_blank" rel="noopener">Tinku Prasad</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Tinkuprasad99" target="_blank" rel="noopener">github.com/Tinkuprasad99</a>
+            </li>
+            <li>
+              <span class="contact-label">Address</span>
+              <span>Katni, Madhya Pradesh 483770</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="section-inner">
+        <h2 class="section-title"><span class="tag">🕸️</span> Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-chip"><span class="skill-dot"></span>HTML</div>
+          <div class="skill-chip"><span class="skill-dot"></span>CSS</div>
+          <div class="skill-chip"><span class="skill-dot"></span>JavaScript</div>
+          <div class="skill-chip"><span class="skill-dot"></span>Core Java</div>
+          <div class="skill-chip"><span class="skill-dot"></span>React + Tailwind CSS</div>
+          <div class="skill-chip"><span class="skill-dot"></span>Node.js</div>
+          <div class="skill-chip"><span class="skill-dot"></span>Express.js</div>
+          <div class="skill-chip"><span class="skill-dot"></span>MySQL</div>
+          <div class="skill-chip"><span class="skill-dot"></span>NoSQL(MongoDB)</div>
+          <div class="skill-chip"><span class="skill-dot"></span>git and GitHub</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EDUCATION (git-log style timeline) ===== -->
+    <section id="education" class="section">
+      <div class="section-inner">
+        <h2 class="section-title"><span class="tag">🕸️</span> Education</h2>
+        <ol class="timeline">
+          <li class="commit">
+            <span class="commit-dot"></span>
+            <div class="commit-body">
+              <h3>B.Tech (CSE) <span class="commit-year">2025</span></h3>
+              <p>RGPV Bhopal — Radharaman Engineering College, Bhopal, M.P.</p>
+              <p class="commit-meta">Percentage: 76.48%</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-dot"></span>
+            <div class="commit-body">
+              <h3>12th <span class="commit-year">2021</span></h3>
+              <p>MPBSE Board — Govt. Model H.S. School V. Garh, Dist. Katni, M.P.</p>
+              <p class="commit-meta">Percentage: 88.88%</p>
+            </div>
+          </li>
+          <li class="commit">
+            <span class="commit-dot"></span>
+            <div class="commit-body">
+              <h3>10th <span class="commit-year">2019</span></h3>
+              <p>MPBSE Board — Govt. Model H.S. School V. Garh, Dist. Katni, M.P.</p>
+              <p class="commit-meta">Percentage: 90.20%</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <h2 class="section-title"><span class="tag">🕸️</span> Projects</h2>
+        <div class="projects-grid">
+
+          <details class="project-card">
+            <summary>
+              <span class="project-name">Tic Tac Toe</span>
+              <span class="project-toggle">+</span>
+            </summary>
+            <p>A two-player Tic Tac Toe game built to practice DOM manipulation and game-state logic in JavaScript.</p>
+            <a href="#" class="project-link">View project →</a>
+          </details>
+
+          <details class="project-card">
+            <summary>
+              <span class="project-name">Tsfood and services</span>
+              <span class="project-toggle">+</span>
+            </summary>
+            <p>A front-end clone of a tsfood and services website, focused on responsive layout and pixel-accurate styling.</p>
+            <a href="#" class="project-link">View project →</a>
+          </details>
+
+          <details class="project-card">
+            <summary>
+              <span class="project-name">Calculator</span>
+              <span class="project-toggle">+</span>
+            </summary>
+            <p>A calculator that handles complex expressions quickly and accurately, built with vanilla JavaScript.</p>
+            <a href="#" class="project-link">View project →</a>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+     <section id="experience" class="section">
+      <div class="section-inner">
+        <h2 class="section-title"><span class="tag">🕸️</span> Experience and Internships</h2>
+        <div class="experience-grid">
+          <div class="experience">
+            <dl>
+              <dt>Online Operator</dt>
+              <dd>Worked as an Online Operator for 6 months, responsible for accurate data entry, record management, and ensuring data integrity.</dd>
+            </dl>
+          </div>
+          <div class="experience">
+            <dl>
+              <dt>Web Development Internship</dt>
+              <dd>Completed a one-month Web Development Internship at Profuture Technologies, Noida, where I built responsive websites using HTML, CSS, JavaScript, and Bootstrap.
+              </dd>
+            </dl>
+          </div>
+          <div class="experience">
+            
+           <dl>
+            <dt>IT Assistant (IT Cell Department)</dt>
+
+            <dd>
+              Working as an IT Assistant in the IT Cell Department at Radharaman Group of Institutions (RGI), Bhopal, with 6+ months of experience. Responsible for managing and maintaining the organization's IT infrastructure,
+              providing technical support, network troubleshooting, system maintenance, hardware/software support.
+      
+            </dd>
+                 
+              
+             </dl>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOBBIES ===== -->
+    <section id="hobbies" class="section">
+      <div class="section-inner">
+        <h2 class="section-title"><span class="tag">🕸️</span> Hobbies</h2>
+        <div class="hobbies-grid">
+          <div class="hobby-card">Motivational Videos</div>
+          <div class="hobby-card">Learning New Things</div>
+          <div class="hobby-card">Exploring the Internet</div>
+          <div class="hobby-card">Online Gaming</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-contain">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Links</h4>
+        <a href="mailto:tinkuprasad001212@gmail.com">Email</a>
+        <a href="9977263382" target="_blank" rel="noopener">Contact</a>
+        <a href="https://in.linkedin.com/in/tinku-prasad-choudhary-89027a295" target="_blank" rel="noopener">Linkedin</a>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+      </div> 
+    </div>
+
+
+    
+    <div class="main-social">
+    <h3 class="social-heading">Follow Me</h3><br>
+    
+    
+    <div class="social-icons">
+       <a href="https://github.com/Tinkuprasad99" target="_blank"><i class="fa-brands fa-github"></i>
+       <a href="https://www.facebook.com/tinku.suryavanshi.925/" class="blink" id="si1"><i class="fab fa-facebook-f"></i></a>
+       <a href="https://leetcode.com/u/Tinkuprasadchoudhary9977/" class="blink" id="si2">     
+           <img src="https://cdn.simpleicons.org/leetcode" alt="LeetCode" width="22" height="22"></i></a>
+       <a href="https://www.instagram.com/modern_tinku_suryavanshi791?igsh=dGE5d3VxcGVnbHNk" class="blink" id="si3"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.linkedin.com/in/tinku-prasad-choudhary-89027a295" class="blink" id="si4"><i class="fab fa-linkedin-in"></i></a>
+       <a href="https://whatsapp.com/channel/0029Va9uDIGEVccFxahz8s37" class="blink" id="si5"><i class="fab fa-whatsapp"></i></a>
+       <a href="https://x.com/Tinkupr21848657" class="blink" id="si6"> <i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+   </div>
+  </div>
+</div>
+</div>
+    <p class="copyright"> "© <span id="year"></span> Tinku Prasad Choudhary"</p>
+  </footer>
+
+  <script src="Tinkuportscript.js"></script>
+</body>
+</html>
